@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.name {
+  color: hotpink;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dots {
+  border: none;
+  border-top: 6px dotted purple;
+  height: 0;
+  margin: 10px 0 20px;
+}
+
+.jeevan-title {
+  color: grey;
+  font-weight: bold;
+}
+
+.contact-heading {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.contact-box {
+  border: 3px solid purple;
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.contact-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.email {
+  color: green;
+  text-decoration: none;
+}
+
+.web {
+  color: orangered;
+  text-decoration: none;
+}

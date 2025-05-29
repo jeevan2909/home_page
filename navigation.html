@@ -1,0 +1,165 @@
+<html>
+<head>
+
+  <title>Yamaha R15 Showcase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #004466;
+      padding: 15px;
+      color: white;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    article {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    aside {
+      flex: 1;
+      min-width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    article img {
+      float: left;
+      margin: 0 20px 20px 0;
+      width: 320px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .photo-gallery {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .photo-gallery h2 {
+      margin-bottom: 15px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      article img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Models</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="container">
+    
+    <article>
+      <h2>Yamaha R15 – The Sporty Icon of the Streets</h2>
+      <img src="https://iamabiker.com/wp-content/uploads/2018/03/Yamaha-R15-V3-HD-wallpapers-5.jpg" alt="Yamaha R15 Bike">
+
+      <p>
+        The Yamaha R15 is one of the most iconic entry-level sport bikes in the Indian market. Its sharp, aerodynamic design not only makes it visually stunning but also enhances performance and control.
+      </p>
+      <p>
+        Equipped with a 155cc liquid-cooled engine and Variable Valve Actuation (VVA) technology, the R15 delivers smooth power across the rev range. It's ideal for both city rides and weekend thrills.
+      </p>
+      <p>
+        Riders love its aggressive riding posture, modern LED headlamps, and race-inspired digital instrument console. The dual-channel ABS and slipper clutch add to safety and performance on twisty roads or racetracks.
+      </p>
+      <p>
+        If you're looking for a bike that combines daily usability with sporty DNA, the Yamaha R15 remains an unbeatable choice in its class.
+      </p>
+    </article>
+
+    <aside>
+      <h3>Key Features</h3>
+      <ul>
+        <li>155cc Liquid-cooled Engine</li>
+        <li>VVA Technology</li>
+        <li>LED Projector Headlamp</li>
+        <li>Dual-channel ABS</li>
+        <li>Digital Instrument Console</li>
+        <li>Slipper Clutch</li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <section class="photo-gallery">
+    <h2>Yamaha R15 Photo Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://i.pinimg.com/474x/0a/3d/09/0a3d0963513f6a5dbcd21259f5b96f67.jpg" alt="Yamaha R15 Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlzs4u5c1OypTliM1DgUDDpoVuioARJC9ig&s" alt="Yamaha R15 Image 2">
+      <img src="https://mrwallpaper.com/images/thumbnail/r15-v3-orange-clouds-cjqqcg4aboqf5b20.jpg" alt="Yamaha R15 Image 3">
+      <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/103795/yzf-r15-right-side-view.jpeg?isig=0" alt="Yamaha R15 Image 4">
+    </div>
+  </section>
+
+</body>
+</html>
