@@ -5,21 +5,21 @@ export const TaskContext = createContext();
 export function TaskProvider({ children }) {
   const [tasks, setTasks] = useState([]);
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    if(!localStorage.getItem("tasks")){
-      localStorage.setItem("tasks", JSON.stringify([]))
-    }
-    if(tasks.length!==0){
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-    }
-  }, [tasks]);
+  //   if(!localStorage.getItem("tasks")){
+  //     localStorage.setItem("tasks", JSON.stringify([]))
+  //   }
+  //   if(tasks.length!==0){
+  //   localStorage.setItem("tasks", JSON.stringify(tasks));
+  //   }
+  // }, [tasks]);
 
 
-  useEffect(() => {
-    const tasks = JSON.parse(localStorage.getItem("tasks"));
-    setTasks(tasks);
-  }, []);
+  // useEffect(() => {
+  //   const tasks = JSON.parse(localStorage.getItem("tasks"));
+  //   setTasks(tasks);
+  // }, []);
 
   return (
     <TaskContext.Provider value={{ tasks, setTasks }}>

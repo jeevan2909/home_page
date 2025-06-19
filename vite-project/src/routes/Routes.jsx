@@ -4,7 +4,6 @@ import Tasks from '../components/Tasks';
 import AddTasks from '../components/AddTasks';
 import {SingleTask} from "../components/SingleTask"
 
-
 export function AppRoutes() {
   return (
     <BrowserRouter>

@@ -12,6 +12,7 @@ export default function TaskComponent({ task, onChange = () => {},onClick }) {
         </div>
 
         <input
+      checked={task.status === "completed"}
           type="checkbox"
           className="w-10 h-10"
           onClick={(e)=>{
@@ -26,7 +27,11 @@ export default function TaskComponent({ task, onChange = () => {},onClick }) {
   );
 }
 
+
 const testCFunctiion =(e)=>{
 console.log(e)
 
 }
+
+
+testCFunctiion("jpy")

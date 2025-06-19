@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { TaskContext } from "../contexts/TaskContext";
 import { useNavigate } from "react-router";
+import { addTask } from "../service/tasksService";
 
 export default function AddTasks() {
   const { tasks, setTasks } = useContext(TaskContext);
@@ -20,19 +21,25 @@ export default function AddTasks() {
           const status = data.get("status");
           console.log(task, desc, priority, status);
 
-          setTasks((prev) => {
+          addTask({
+            title: task,
+            description: desc,
+            status,
+            priority,
+          });
+          // setTasks((prev) => {
 
-              return [
-                ...prev,
-                {
-                  id: prev.length + 1,
-                  title: task,
-                  description: desc,
-                  status,
-                  priority,
-                },
-              ];
-            });
+          //     return [
+          //       ...prev,
+          //       {
+          //         id: prev.length + 1,
+          //         title: task,
+          //         description: desc,
+          //         status,
+          //         priority,
+          //       },
+          //     ];
+          //   });
 
           navigate("/tasks")
         }}
